@@ -1,6 +1,12 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss']
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+  i18n: {
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'uk', name: 'Українська', file: 'uk.json' }  // краще не використовувати nl для української
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'locales/',
+  }
 })
