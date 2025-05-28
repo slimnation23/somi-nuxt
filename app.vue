@@ -1,5 +1,6 @@
 <template>
-    <NuxtPage />
-    <LangSwitcher />
+    <div class="flex flex-col justify-center items-center h-screen">
+        <NuxtPage />
+        <LangSwitcher />
+    </div>
 </template>
-

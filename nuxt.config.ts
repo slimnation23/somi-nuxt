@@ -16,6 +16,11 @@ export default defineNuxtConfig({
                 name: "Netherlands",
                 file: "nl.json",
             },
+            {
+                code: "sp",
+                name: "Spain",
+                file: "sp.json",
+            },
         ],
         defaultLocale: "en",
     },

@@ -1,7 +1,6 @@
 <template>
     <div>
-        <p>Lang Switcher</p>
-        <select :value="locale" @change="changeLocale($event.target.value)">
+        <select class="border-2 rounded p-2 text-sm" :value="locale" @change="changeLocale($event.target.value)">
             <option v-for="lang in locales" :key="lang.code" :value="lang.code">
                 {{ lang.name }}
             </option>
