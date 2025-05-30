@@ -4,3 +4,6 @@
         <LangSwitcher />
     </div>
 </template>
+
+<script setup>
+</script>
