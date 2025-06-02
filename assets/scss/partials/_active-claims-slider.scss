@@ -1,0 +1,28 @@
+.claim-slider {
+    @apply relative w-full z-0 mb-20;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 197px;
+        height: 204px;
+        background: url("/template/images/dots-who-gray.png") no-repeat center center;
+        background-size: cover;
+        @apply -right-8 -top-8 xl:-left-8 xl:top-auto xl:right-auto xl:-bottom-8 brightness-50 m-auto rotate-0 xl:rotate-180;
+        z-index: 0;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 197px;
+        height: 204px;
+        background: url("/template/images/dots-who-gray.png") no-repeat center center;
+        background-size: cover;
+        @apply -left-8 -bottom-8 xl:-right-8 xl:left-auto xl:-top-8 brightness-50 rotate-180 xl:rotate-0;
+        z-index: 0;
+    }
+}
+
+.claims-card {
+    @apply relative flex flex-col justify-between items-center text-center gap-10 rounded-4xl border-3 border-white bg-black px-14 pt-20 pb-10 h-96 lg:h-[580px] lg:max-w-[416px] lg:pt-40 lg:pb-16;
+}

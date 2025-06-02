@@ -1,0 +1,13 @@
+.numbers-leaks::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+    opacity: 0.2;
+    background: white;
+    filter: blur(100px);
+}

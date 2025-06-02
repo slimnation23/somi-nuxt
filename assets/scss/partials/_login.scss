@@ -1,0 +1,48 @@
+.login {
+    .mobile {
+        .iphone {
+            width: 17rem;
+            height: 34.75rem;
+            background-image: url("/template/images/iphone-iframe.png");
+            padding: 58px 30px 26px;
+        }
+    }
+}
+.login-form {
+    max-width: 43.1875rem;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-control {
+    position: relative;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 4px 20px 0 rgba(0, 10, 255, 0.2) inset;
+    outline: none;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+@media (max-width: 639px) {
+    .form-control {
+        padding: 1rem 1.25rem;
+    }
+}

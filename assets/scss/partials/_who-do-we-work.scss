@@ -1,0 +1,25 @@
+ul.timeline {
+    border-image: linear-gradient(rgba(217, 217, 217, 0) 0%, #f0ebe8 20%, #f0ebe8 80%, rgba(217, 217, 217, 0) 100%) 1;
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -23px;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        &:first-child::before {
+            background-color: #000aff;
+        }
+    }
+}

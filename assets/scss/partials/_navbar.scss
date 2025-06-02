@@ -1,0 +1,12 @@
+.menu-item {
+    @apply hover:text-primary hover:underline transition-all duration-300;
+}
+
+.sub-menu-link {
+    @apply border-b-2 border-gray pb-3.5 last:border-b-0 last:pb-0;
+}
+
+.menu-item.active {
+    color: #000aff;
+    text-decoration: underline;
+}

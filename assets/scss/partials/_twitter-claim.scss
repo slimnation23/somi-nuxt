@@ -1,0 +1,91 @@
+$background-center: center;
+$background-no-repeat: no-repeat;
+$background-cover: cover;
+$icon-space: 1.3em;
+$font-size-large: 96px;
+$font-size-small: 48px;
+$padding-right-large: 32px;
+
+// Mixin for background image
+@mixin background-image($url) {
+    background-image: url($url);
+    background-position: $background-center;
+    background-repeat: $background-no-repeat;
+    background-size: $background-cover;
+}
+
+// Mixin for ordered lists
+@mixin ordered-list {
+    list-style-type: none;
+    counter-reset: elementcounter;
+    padding-left: 0;
+
+    li:before {
+        content: counter(elementcounter) ". ";
+        counter-increment: elementcounter;
+        font-weight: bold;
+        font-size: $font-size-large;
+        padding-right: $padding-right-large;
+    }
+}
+
+#hero {
+    .hero-img {
+        @include background-image("/template/images/twitter-hero-img.png");
+        @media (max-width: 768px) {
+            @include background-image("/template/images/twitter-hero-mobile-img.png");
+        }
+    }
+}
+
+#demand {
+    ul {
+        --icon-space: $icon-space;
+        list-style: none;
+        padding: 0 0 0 1.8rem;
+
+        .list-icon::before {
+            content: url("/template/icons/shield-check.svg");
+            display: inline-block;
+            margin-left: calc(var(--icon-space) * -1);
+            width: var(--icon-space);
+        }
+    }
+
+    .demand-img {
+        @include background-image("/template/images/twitter-demand-img.png");
+
+        ol {
+            @include ordered-list;
+            @media (max-width: 768px) {
+                li::before {
+                    font-size: $font-size-small;
+                    padding-top: 8px;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+#join {
+    @include background-image("/template/images/twitter-why-join-img.png");
+    ol {
+        @include ordered-list;
+        @media (max-width: 768px) {
+            li::before {
+                font-size: $font-size-small;
+                padding-top: 8px;
+                padding-right: 12px;
+            }
+        }
+    }
+}
+
+#about-somi {
+    @include background-image("/template/images/twitter-about-bg.png");
+}
+
+.close {
+    visibility: hidden;
+}

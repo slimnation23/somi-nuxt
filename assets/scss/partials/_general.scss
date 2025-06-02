@@ -1,0 +1,63 @@
+html {
+    @apply scroll-smooth font-montserrat bg-gray text-black m-0 p-0;
+}
+
+.wrapper {
+    @apply w-full px-5 md:px-9 xl:px-28 2xl:mx-auto 2xl:container;
+}
+
+@layer base {
+    h1 {
+        @apply text-4xl lg:text-6xl font-redHat font-semibold;
+    }
+    h2 {
+        @apply text-3xl lg:text-5xl font-redHat font-semibold;
+    }
+    h3 {
+        @apply text-xl lg:text-2xl font-redHat font-semibold;
+    }
+}
+
+.section {
+    @apply py-28 lg:py-52;
+}
+
+.first-section {
+    @apply pb-10 pt-36 lg:pt-44 lg:pb-20;
+}
+
+.single-section {
+    @apply pb-28 pt-36 lg:pt-44 lg:pb-52;
+}
+
+.terms-section {
+    @apply pt-16 pb-28 lg:pb-52 lg:pt-20;
+}
+
+.title-1 {
+    @apply lg:text-2xl;
+}
+
+.title-2 {
+    @apply text-sm lg:text-lg;
+}
+
+.title-3 {
+    @apply text-5xl lg:text-7xl font-bold;
+}
+
+.title-4 {
+    @apply text-lg lg:text-2xl font-semibold;
+}
+
+.title-5 {
+    @apply text-5xl font-bold lg:font-black;
+}
+
+.title-6 {
+    @apply text-xs lg:text-base;
+}
+
+.title-7 {
+    @apply text-xl lg:text-2xl font-redHat font-semibold;
+}

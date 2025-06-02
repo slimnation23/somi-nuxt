@@ -1,0 +1,22 @@
+.get-in-touch {
+    @apply relative max-w-screen-md w-full bg-cover rounded-4xl shadow-hardDark overflow-hidden
+}
+
+.info-section {
+    @apply relative z-10 flex flex-col gap-10 bg-white justify-center max-w-screen-lg mx-auto rounded-4xl px-8 py-16 md:p-20 lg:gap-20;
+
+    &-referral {
+        @apply max-w-screen-xl shadow-card mt-10 md:mt-0;
+    }
+    &-app {
+        @apply max-w-screen-xl shadow-card bg-gradient-to-br bg-transparent backdrop-blur-xl -mt-[18rem] lg:-mt-[30rem]
+    }
+}
+
+.primary-section {
+    @apply relative z-20 bg-cover text-gray py-16 lg:py-24;
+}
+
+.payout-section {
+    @apply relative z-20 text-gray w-full flex flex-col justify-center gap-16 px-8 py-16 md:py-[102px] lg:gap-20;
+}

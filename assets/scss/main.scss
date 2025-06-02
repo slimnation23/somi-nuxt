@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@use "partials/datepicker";
+
+//components
+@import "components/btn";
+@import "components/checkboxes";
+@import "components/disabled-blue-checkboxes";
+
+//partials
+@import "partials/login";
+@import "partials/who-do-we-work";
+@import "partials/somi-app";
+@import "partials/twitter-claim";
+@import "partials/twitter-thank-you";
+@import "partials/pagination";
+@import "partials/load-spinner";
+@import "partials/button-spinner";
+@import "partials/active-claims-slider";
+@import "partials/cards";
+@import "partials/general";
+@import "partials/sections";
+@import "partials/navbar";
+@import "partials/swiper-slider";
+@import "partials/news";
+@import "partials/claims";
+@import "partials/fonts";

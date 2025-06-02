@@ -1,0 +1,55 @@
+.btn {
+    @apply flex justify-center items-center gap-4 text-center px-7 py-4 w-full rounded-full transition-all duration-300 ease-in-out sm:w-96 md:px-9 lg:w-fit lg:text-2xl ;
+    // primary
+    &-primary {
+        @apply bg-primary text-white font-semibold border-2 border-primary;
+
+        &:hover {
+            @apply shadow-stepper;
+        }
+
+        &:active {
+            background: linear-gradient(to left, #48a7ff, #48a7ff, #4fb8d6, #52bec6);
+        }
+    }
+    // secondary
+    &-secondary {
+        @apply bg-transparent text-primary font-medium border-2 border-primary;
+
+        &:hover {
+            box-shadow: 0 4px 20px 0 rgba(0, 10, 255, 0.3);
+        }
+
+        &:active {
+            border-color: rgb(96 165 250);
+            color: rgb(96 165 250);
+        }
+    }
+    // white-primary
+    &-white-primary-button {
+        @apply bg-gray text-primary font-semibold border-2 border-transparent;
+
+        &:hover {
+            @apply shadow-stepper;
+        }
+
+        &:active {
+            background: linear-gradient(to left, #48a7ff, #48a7ff, #4fb8d6, #52bec6);
+            color: var(--btn-text);
+            border: none !important;
+        }
+    }
+    // white-secondary-button
+    &-white-secondary-button {
+        @apply bg-transparent text-white  font-medium border-2 border-white;
+
+        &:hover {
+            @apply shadow-stepper;
+        }
+
+        &:active {
+            border-color: rgb(96 165 250);
+            color: rgb(96 165 250);
+        }
+    }
+}
