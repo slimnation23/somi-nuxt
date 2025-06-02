@@ -1,16 +1,17 @@
 <template>
-    <footer class="primary-section">
-        <!-- <picture>
-            <source srcset="/template/images/footer-gradiane.webp" media="(min-width: 768px)" type="image/webp" />
+    <footer class="relative z-20 bg-cover text-gray-100 py-16 lg:py-24">
+        <picture>
+            <source srcset="/images/footer-gradiane.webp" media="(min-width: 768px)" type="image/webp" />
             <img
-                src="/template/images/footer-gradiane-mobile.webp"
+                src="/images/footer-gradiane-mobile.webp"
                 alt="bg"
                 loading="lazy"
                 aria-hidden="true"
                 class="absolute inset-0 w-full h-full object-cover z-[-1]"
             />
-        </picture> -->
-        <div class="wrapper flex flex-col gap-14 || lg:gap-36">
+        </picture>
+
+        <div class="w-full px-5 md:px-9 xl:px-28 2xl:mx-auto 2xl:container flex flex-col gap-14 || lg:gap-36">
             <div class="grid gap-14 || sm:grid-cols-2 xl:grid-cols-10 xl:gap-28">
                 <!-- Quick links -->
                 <div class="flex flex-col gap-5 || sm:col-span-1 xl:col-span-3 xl:gap-20">
@@ -144,6 +145,7 @@
                             <p class="title-1 font-semibold">Newsletter</p>
                             <div class="flex flex-col gap-5">
                                 <p>Subscribe to our newsletter</p>
+                                <!-- <newsletter></newsletter> -->
                             </div>
                             <div class="text-center || sm:text-left">
                                 <a href="/contact" class="btn btn-white-secondary-button !w-full || lg:!w-fit">

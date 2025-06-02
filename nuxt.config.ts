@@ -1,7 +1,7 @@
 import { useI18n } from "vue-i18n";
 export default defineNuxtConfig({
-    devtools: {enabled: false},
-    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+    devtools: { enabled: false },
+    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image"],
     css: ["~/assets/css/tailwind.css"],
     i18n: {
         langDir: "locales",

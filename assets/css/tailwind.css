@@ -4,6 +4,11 @@
     --color-primary: #4f46e5;
 }
 
+html {
+    @apply scroll-smooth bg-gray-100 text-black m-0 p-0;
+}
+
 .router-link-exact-active {
-    @apply border-2 border-blue-500
+    color: #000aff;
+    text-decoration: underline;
 }
