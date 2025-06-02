@@ -1,7 +1,5 @@
 <template>
-    <header
-        class="fixed top-0 z-50 bg-header rounded-b-lg w-full py-6 backdrop-blur-xl" style="box-shadow: 0 4px 20px 0 rgba(0, 10, 255, 0.2);"
-    >
+    <header class="fixed top-0 z-50 bg-header shadow-teams rounded-b-lg w-full py-6 backdrop-blur-xl">
         <div class="w-full px-5 md:px-9 xl:px-28 2xl:mx-auto 2xl:container">
             <nav>
                 <div class="flex flex-row items-center justify-between gap-6">

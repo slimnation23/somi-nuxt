@@ -1,8 +1,14 @@
 import { useI18n } from "vue-i18n";
 export default defineNuxtConfig({
     devtools: { enabled: false },
-    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/image"],
-    css: ["~/assets/css/tailwind.css"],
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    },
+    css: ['~/assets/scss/main.scss'],
+    modules: ["@nuxtjs/i18n", "@nuxt/image"],
     i18n: {
         langDir: "locales",
         strategy: "prefix_except_default",
