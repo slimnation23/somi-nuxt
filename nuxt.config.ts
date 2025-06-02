@@ -1,34 +1,45 @@
-import { useI18n } from "vue-i18n";
+import { fileURLToPath } from "node:url";
+
 export default defineNuxtConfig({
     devtools: { enabled: false },
+
+    // SCSS
+    css: ["~/assets/scss/main.scss"],
+
     postcss: {
         plugins: {
             tailwindcss: {},
             autoprefixer: {},
         },
     },
-    css: ['~/assets/scss/main.scss'],
+
     modules: ["@nuxtjs/i18n", "@nuxt/image"],
+
+    // i18n
     i18n: {
         langDir: "locales",
         strategy: "prefix_except_default",
         locales: [
-            {
-                code: "en",
-                name: "English",
-                file: "en.json",
-            },
-            {
-                code: "nl",
-                name: "Netherlands",
-                file: "nl.json",
-            },
-            {
-                code: "sp",
-                name: "Spain",
-                file: "sp.json",
-            },
+            { code: "nl", name: "Netherlands", file: "nl.json" },
+            { code: "en", name: "English", file: "en.json" },
         ],
-        defaultLocale: "en",
+        defaultLocale: "nl",
+    },
+
+    vite: {
+        resolve: {
+            alias: {
+                "@": fileURLToPath(new URL("./src", import.meta.url)),
+            },
+        },
+        server: {
+            proxy: {
+                "/template": {
+                    target: "http://localhost:3000/",
+                    changeOrigin: true,
+                    rewrite: (path) => path.replace(/^\/template/, ""),
+                },
+            },
+        },
     },
 });

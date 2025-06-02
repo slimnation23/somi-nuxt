@@ -1,8 +1,8 @@
+@use "partials/datepicker";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@use "partials/datepicker";
 
 //components
 @import "components/btn";
