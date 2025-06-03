@@ -1,29 +1,28 @@
+//components
+@use "components/btn";
+@use "components/checkboxes";
+@use "components/disabled-blue-checkboxes";
+
+//partials
 @use "partials/datepicker";
+@use "partials/login";
+@use "partials/who-do-we-work";
+@use "partials/somi-app";
+@use "partials/twitter-claim";
+@use "partials/twitter-thank-you";
+@use "partials/pagination";
+@use "partials/load-spinner";
+@use "partials/button-spinner";
+@use "partials/active-claims-slider";
+@use "partials/cards";
+@use "partials/general";
+@use "partials/sections";
+@use "partials/navbar";
+@use "partials/swiper-slider";
+@use "partials/news";
+@use "partials/claims";
+@use "partials/fonts";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-//components
-@import "components/btn";
-@import "components/checkboxes";
-@import "components/disabled-blue-checkboxes";
-
-//partials
-@import "partials/login";
-@import "partials/who-do-we-work";
-@import "partials/somi-app";
-@import "partials/twitter-claim";
-@import "partials/twitter-thank-you";
-@import "partials/pagination";
-@import "partials/load-spinner";
-@import "partials/button-spinner";
-@import "partials/active-claims-slider";
-@import "partials/cards";
-@import "partials/general";
-@import "partials/sections";
-@import "partials/navbar";
-@import "partials/swiper-slider";
-@import "partials/news";
-@import "partials/claims";
-@import "partials/fonts";
