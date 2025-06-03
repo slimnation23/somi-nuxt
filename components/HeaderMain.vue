@@ -3,7 +3,7 @@
         <div class="wrapper">
             <nav>
                 <div class="flex flex-row items-center justify-between gap-6">
-                    <a href="/" class="flex items-center">
+                    <NuxtLink :to="localPath('/')" class="flex items-center">
                         <NuxtImg
                             src="/icons/logo.svg"
                             alt="logo"
@@ -11,7 +11,7 @@
                             height="47"
                             class="h-7 w-24 || lg:w-36 lg:h-12"
                         />
-                    </a>
+                    </NuxtLink>
 
                     <ul class="hidden gap-6 xl:gap-11 items-center font-semibold text-lg || lg:flex">
                         <li>

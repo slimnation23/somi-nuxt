@@ -1,9 +1,6 @@
 <template>
     <div :class="[{ 'flex justify-center': windowWidth < 640 }]">
-        <div
-            class="flex items-center justify-between relative rounded-4xl"
-            v-show="pastActions.length"
-        >
+        <div class="flex items-center justify-between relative rounded-4xl" v-show="pastActions.length">
             <div class="w-full">
                 <template v-if="windowWidth > 640">
                     <swiper
@@ -25,16 +22,12 @@
                         @swiper="onSwiper"
                         @slideChange="onSlideChange"
                     >
-                        <swiper-slide
-                            v-for="(slider, index) in pastActions"
-                            :key="index"
-                            :data-history="index"
-                        >
+                        <swiper-slide v-for="(slider, index) in pastActions" :key="index" :data-history="index">
                             <past-case-card :cardData="slider" />
                         </swiper-slide>
                     </swiper>
                 </template>
-                <template v-if="windowWidth <= 640">
+                <template v-else>
                     <swiper
                         :effect="'cards'"
                         :cardsEffect="{
@@ -124,6 +117,7 @@ export default {
     },
     data() {
         return {
+            modules: [EffectCards],
             windowWidth: window.innerWidth,
             swiper: null,
         };
@@ -145,7 +139,7 @@ export default {
     methods: {
         onSwiper(swiper) {
             this.swiper = swiper;
-            this.windowWidth < 640 && this.swiper.slideTo(this.$store.getters.getPastActions.length - 1);
+            this.windowWidth < 640 && this.swiper.slideTo(this.pastActions.length - 1);
         },
         onSlideChange(swiper) {
             this.swiper = swiper;
@@ -161,13 +155,8 @@ export default {
         },
         onUpdate() {
             this.handleSlideToNext();
-            this.swiper.slideTo(this.$store.getters.getPastActions.length - 1);
+            this.swiper.slideTo(this.pastActions.length - 1);
         },
-    },
-    setup() {
-        return {
-            modules: [EffectCards],
-        };
     },
 };
 </script>
