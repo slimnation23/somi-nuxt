@@ -21,8 +21,8 @@
                 @click="handleSlideToNext"
                 class="next-btn absolute top-2 right-4 shadow-card bg-white w-14 h-14 rounded-full flex justify-center items-center || sm:-top-20 sm:right-8 md:right-8 lg:right-5 md:-top-3 lg:w-20 lg:h-20"
             >
-                <img
-                    src="../template/icons/right-arrow.svg"
+                <NuxtImg
+                    src="/icons/right-arrow.svg"
                     width="18"
                     height="29"
                     class="max-w-5 max-h-5 || lg:max-h-fit lg:max-w-fit"

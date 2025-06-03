@@ -1,5 +1,5 @@
 <template>
-    <div class="flex relative">
+    <div class="flex relative" ref="menuRef">
         <div
             @click="show = !show"
             class="flex items-center gap-1.5 font-semibold rounded-3xl lg:bg-white cursor-pointer uppercase px-3 py-1.5 || lg:w-20 lg:text-xl lg:font-extrabold"
@@ -14,7 +14,7 @@
                     <li
                         v-for="lang in locales"
                         :key="lang.code"
-                        class="hover:bg-blue-900 hover:text-white"
+                        class="hover:bg-primary hover:text-white"
                         @click="selectLocale(lang.code)"
                     >
                         <span
@@ -30,14 +30,29 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 import { useI18n } from "vue-i18n";
 
 const show = ref(false);
 const { locales, locale, setLocale } = useI18n();
+const menuRef = ref(null);
 
 function selectLocale(code) {
     setLocale(code);
-    show.value = false; // закриваємо меню після вибору
+    show.value = false;
 }
+
+function handleClickOutside(event) {
+    if (menuRef.value && !menuRef.value.contains(event.target)) {
+        show.value = false;
+    }
+}
+
+onMounted(() => {
+    document.addEventListener("click", handleClickOutside);
+});
+
+onBeforeUnmount(() => {
+    document.removeEventListener("click", handleClickOutside);
+});
 </script>

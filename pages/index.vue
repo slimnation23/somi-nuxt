@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="overflow-hidden bg-gradient">
-            <div class="w-full px-5 md:px-9 xl:px-28 2xl:mx-auto 2xl:container pt-36 pb-28 || lg:pt-44 lg:pb-40">
+            <div class="wrapper pt-36 pb-28 || lg:pt-44 lg:pb-40">
                 <div class="grid grid-cols-1 gap-16 || lg:grid-cols-2 lg:gap-40">
                     <div class="flex flex-col gap-5 col-span-1 || lg:min-h-28 lg:gap-20 lg:pt-6">
                         <h1>
