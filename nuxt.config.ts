@@ -2,20 +2,14 @@ import { fileURLToPath } from "node:url";
 
 export default defineNuxtConfig({
     devtools: { enabled: false },
-
-    // SCSS
     css: ["~/assets/scss/main.scss"],
-
     postcss: {
         plugins: {
             tailwindcss: {},
             autoprefixer: {},
         },
     },
-
-    modules: ["@nuxtjs/i18n", "@nuxt/image"],
-
-    // i18n
+    modules: ["@nuxtjs/i18n", "@nuxt/image", "@pinia/nuxt"],
     i18n: {
         langDir: "locales",
         strategy: "prefix_except_default",
@@ -25,7 +19,6 @@ export default defineNuxtConfig({
         ],
         defaultLocale: "nl",
     },
-
     vite: {
         resolve: {
             alias: {
@@ -42,4 +35,5 @@ export default defineNuxtConfig({
             },
         },
     },
+    plugins: [{ src: "src/plugins/translateMixin.client.js", mode: "client" }],
 });

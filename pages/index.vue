@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="w-full col-span-1 mx-auto min-h-[656px] || sm:w-1/2 lg:w-full">
-                        <!-- <hero-slider ref="heroSlide" class="pb-16 || lg:pb-0"></hero-slider> -->
+                        <hero-slider ref="heroSlide" class="pb-16 || lg:pb-0"></hero-slider>
                         <div class="flex flex-col justify-center items-center gap-3 || lg:hidden">
                             <a class="btn btn-secondary" href="/all-cases">Discover more</a>
                         </div>
@@ -690,6 +690,24 @@
     </div>
 </template>
 
-<script setup>
-const localPath = useLocalePath();
+<script>
+import { useMainStore } from "~/src/stores/mainStore";
+import { useLocalePath } from "#i18n";
+import HeroSlider from '~/components/HeroSlider.vue'
+
+export default {
+    name: "DefaultLayout",
+
+    setup() {
+        const mainStore = useMainStore();
+        const localPath = useLocalePath();
+
+        mainStore.parseLang();
+
+        return {
+            mainStore,
+            localPath,
+        };
+    },
+};
 </script>
