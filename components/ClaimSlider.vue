@@ -22,7 +22,7 @@
                     <div
                         class="absolute left-0 right-0 bg-gray-light flex justify-center items-center rounded-full m-auto -top-8 w-16 h-16 || md:-top-20 md:w-36 md:h-36"
                     >
-                        <img
+                        <NuxtImg
                             width="150"
                             height="150"
                             class="w-10 h-auto || md:w-20"
@@ -67,31 +67,34 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useMainStore } from "~/src/stores/mainStore";
-import { computed } from "vue";
 
 export default {
     components: { Swiper, SwiperSlide },
     setup() {
-        const mainStore = useMainStore();
-
-        const ActiveClaimsSlider = computed(() => mainStore.getActiveClaimsSlider);
-
-        const statusClasses = (status) => {
-            return status === "active" || status === "actief" || status === "aktiv"
-                ? "bg-gradient-to-r from-secondary to-secondary-dark"
-                : "bg-gradient-to-r from-sticky to-secondary-dark";
-        };
-
         return {
             SwiperNavigation: Navigation,
             SwiperPagination: Pagination,
-            ActiveClaimsSlider,
-            statusClasses,
         };
+    },
+    computed: {
+        ActiveClaimsSlider() {
+            const mainStore = useMainStore();
+            return mainStore.getActiveClaimsSlider;
+        },
+    },
+    mounted() {
+        const mainStore = useMainStore();
+        mainStore.fetchActiveClaimsSlider();
+    },
+    methods: {
+        statusClasses(status) {
+            return status === "active" || status === "actief" || status === "aktiv"
+                ? "bg-gradient-to-r from-secondary to-secondary-dark"
+                : "bg-gradient-to-r from-sticky to-secondary-dark";
+        },
     },
 };
 </script>
-
 
 <style scoped>
 .swiper {

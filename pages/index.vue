@@ -127,7 +127,7 @@
                     actions
                 </h2>
                 <!-- Slider -->
-                <!-- <past-case-slider></past-case-slider> -->
+                <past-case-slider></past-case-slider>
 
                 <div class="hidden justify-end md:flex">
                     <a class="btn btn-secondary" href="/all-cases">Discover more</a>
@@ -139,15 +139,15 @@
         </section>
 
         <section class="relative py-28 lg:py-52 overflow-hidden">
-            <!-- <img
-                src="/template/images/bg-gradient.webp"
+            <NuxtImg
+                src="/images/bg-gradient.webp"
                 alt="bg"
                 loading="lazy"
                 width="1536"
                 height="1895"
                 aria-hidden="true"
                 class="absolute inset-0 w-full h-full object-cover z-[-1]"
-            /> -->
+            />
             <div class="wrapper flex flex-col gap-20 || md:gap-28">
                 <div class="text-gray flex flex-col gap-9 || md:gap-11">
                     <h2>How do we work?</h2>

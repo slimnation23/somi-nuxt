@@ -53,13 +53,21 @@ export const useMainStore = defineStore("main", {
         getModalState: (state) => state.modal,
         getNewsSort: (state) => state.newsSort,
         getActiveClaimsSlider: (state) => {
+            const lang = state.lang;
+
             return state.activeClaimsSlider.filter((item) => {
-                const lang = state.lang;
                 const category = item[`category-${lang}`];
-                return item.language === lang && Array.isArray(category) && category.includes("running");
+                return item.language === lang && category === "running";
             });
         },
+        getPastActions: (state) => {
+            const lang = state.lang;
 
+            return state.cases.filter((item) => {
+                const category = item[`category-${lang}`];
+                return item.language === lang && category !== "running";
+            });
+        },
         getActiveClaims: (state) => {
             const langFiltered = state.cases.filter((c) => c.language === state.lang);
             return langFiltered.filter((c) => !!c.status);
@@ -162,7 +170,7 @@ export const useMainStore = defineStore("main", {
 
         async fetchActiveClaimsSlider() {
             try {
-                const response = await axios.get(`${this.baseUrl}/api/v1/content-manger/get-data/active-claims-slider`);
+                const response = await axios.get("https://somi.nl/api/v1/content-manger/get-data/active-claims-slider");
                 this.activeClaimsSlider = response.data.result;
             } catch (error) {
                 console.error(error);
