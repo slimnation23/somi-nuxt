@@ -164,14 +164,14 @@
                             <div
                                 class="flex flex-col bg-gray p-8 rounded-3xl max-w-4xl || md:gap-20 md:flex-row lg:p-11"
                             >
-                                <!-- <img
-                                    src="/template/icons/undraw_forms.png"
+                                <NuxtImg
+                                    src="/icons/undraw_forms.png"
                                     class="w-fit self-center || md:self-start md:h-full"
                                     alt="undraw_forms"
                                     width="100"
                                     height="100"
                                     loading="lazy"
-                                /> -->
+                                />
                                 <div class="flex flex-col gap-5">
                                     <div class="title-4 text-primary-dark">01. File the complaint</div>
                                     <p class="title-2">
@@ -185,14 +185,14 @@
                             <div
                                 class="flex flex-col bg-gray p-8 rounded-3xl max-w-4xl || md:gap-20 md:flex-row lg:p-11"
                             >
-                                <!-- <img
-                                    src="/template/icons/undraw_join.png"
+                                <NuxtImg
+                                    src="/icons/undraw_join.png"
                                     class="w-fit self-center || md:self-start md:h-full"
                                     alt="undraw_join"
                                     width="100"
                                     height="100"
                                     loading="lazy"
-                                /> -->
+                                />
                                 <div class="flex flex-col gap-5">
                                     <div class="title-4 text-primary-dark">02. Start the claim</div>
                                     <p class="title-2">
@@ -206,14 +206,14 @@
                             <div
                                 class="flex flex-col bg-gray p-8 rounded-3xl max-w-4xl || md:gap-20 md:flex-row lg:p-11"
                             >
-                                <!-- <img
-                                    src="/template/icons/undraw_resume.png"
+                                <NuxtImg
+                                    src="/icons/undraw_resume.png"
                                     class="w-fit self-center || md:self-start md:h-full"
                                     alt="undraw_resume"
                                     width="100"
                                     height="100"
                                     loading="lazy"
-                                /> -->
+                                />
                                 <div class="flex flex-col gap-5">
                                     <div class="title-4 text-primary-dark">03. Issue a Summons</div>
                                     <p class="title-2">
@@ -227,14 +227,14 @@
                             <div
                                 class="flex flex-col bg-gray p-8 rounded-3xl max-w-4xl || md:gap-20 md:flex-row lg:p-11"
                             >
-                                <!-- <img
-                                    src="/template/icons/undraw_judge.png"
+                                <NuxtImg
+                                    src="/icons/undraw_judge.png"
                                     class="w-fit self-center || md:self-start md:h-full"
                                     alt="undraw_judge"
                                     width="100"
                                     height="100"
                                     loading="lazy"
-                                /> -->
+                                />
                                 <div class="flex flex-col gap-5">
                                     <div class="title-4 text-primary-dark">04. Take the evidence to the court</div>
                                     <p class="title-2">
@@ -248,14 +248,14 @@
                             <div
                                 class="flex flex-col bg-gray p-8 rounded-3xl max-w-4xl || md:gap-20 md:flex-row lg:p-11"
                             >
-                                <!-- <img
-                                    src="/template/icons/undraw_savings.png"
+                                <NuxtImg
+                                    src="/icons/undraw_savings.png"
                                     class="w-fit self-center || md:self-start md:h-full"
                                     alt="undraw_savings"
                                     width="100"
                                     height="100"
                                     loading="lazy"
-                                /> -->
+                                />
                                 <div class="flex flex-col gap-5">
                                     <div class="title-4 text-primary-dark">05.Distribute the compensation</div>
                                     <p class="title-2">
@@ -302,12 +302,12 @@
                 </h2>
 
                 <div class="relative flex items-center gap-10 flex-wrap || sm:justify-around xl:flex-nowrap">
-                    <!-- <img
+                    <NuxtImg
                         class="absolute w-auto -top-10 right-0 || md:-top-1/4"
-                        src="/template/images/dots-who.png"
+                        src="/images/dots-who.png"
                         alt="dots-who"
                         loading="lazy"
-                    /> -->
+                    />
                     <div class="somi-card somi-card-why">
                         <div class="somi-card-why-number">01.</div>
                         <div class="title-4 mb-2.5 || md:mb-5 lg:min-h-16">Action collective</div>
@@ -335,12 +335,12 @@
                             l’utilisation des données personnelles et les risques associés.
                         </p>
                     </div>
-                    <!-- <img
+                    <NuxtImg
                         class="absolute w-auto -bottom-10 md:-bottom-1/4 left-0 rotate-180"
-                        src="/template/images/dots-who.png"
+                        src="/images/dots-who.png"
                         alt="dots-who"
                         loading="lazy"
-                    /> -->
+                    />
                 </div>
             </div>
         </section>
@@ -363,7 +363,7 @@
                     </div>
                     <div class="flex flex-col gap-8 || lg:gap-11">
                         <div class="flex flex-col items-center gap-12 mb-14 || lg:hidden">
-                            <!-- <video
+                            <video
                                 class="w-full h-80 rounded-2xl"
                                 controls
                                 muted
@@ -372,9 +372,9 @@
                                 playsinline
                                 data-cookieconsent="ignore"
                             >
-                                <source src="/template/videos/somi-app.webm" type="video/webm" />
+                                <source src="/videos/somi-app.webm" type="video/webm" />
                                 Your browser does not support HTML video.
-                            </video> -->
+                            </video>
                             <a
                                 href="https://my.somi.nl/signup"
                                 class="btn btn-secondary !flex || lg:!hidden"
@@ -422,25 +422,25 @@
                             href="https://apps.apple.com/us/app/somi-gdpr-breach-compliance/id1526458829"
                             target="_blank"
                         >
-                            <!-- <img
-                                src="/template/images/apple-store.webp"
+                            <NuxtImg
+                                src="/images/apple-store.webp"
                                 class="min-w-full rounded-md"
                                 alt="app-store"
                                 loading="lazy"
                                 width="131"
                                 height="43"
-                            /> -->
+                            />
                         </a>
 
                         <a href="https://play.google.com/store/apps/details?id=tech.dotswan.somi" target="_blank">
-                            <!-- <img
-                                src="/template/images/google-play.webp"
+                            <NuxtImg
+                                src="/images/google-play.webp"
                                 class="min-w-full rounded-md"
                                 alt="google-play"
                                 loading="lazy"
                                 width="147"
                                 height="43"
-                            /> -->
+                            />
                         </a>
                     </div>
                 </div>
@@ -456,13 +456,13 @@
                                 playsinline
                                 data-cookieconsent="ignore"
                             >
-                                <!-- <source src="/template/videos/somi-app.webm" type="video/webm" /> -->
+                                <source src="/videos/somi-app.webm" type="video/webm" />
                                 Your browser does not support HTML video.
                             </video>
                             <div
                                 class="absolute top-4 left-1/2 -translate-x-1/2 w-28 h-8 rounded-3xl bg-black flex items-center justify-end px-2.5"
                             >
-                                <!-- <img src="/template/images/camera-lens.png" class="w-3 h-3 brightness-50" alt="lens" /> -->
+                                <NuxtImg src="/images/camera-lens.png" class="w-3 h-3 brightness-50" alt="lens" />
                             </div>
                             <div class="absolute w-1 h-20 bg-black -right-1 top-40 rounded-tr-md rounded-br-md"></div>
                             <div class="absolute w-1 h-10 bg-black -left-1 top-20 rounded-tl-md rounded-bl-md"></div>
@@ -475,25 +475,25 @@
                             href="https://apps.apple.com/us/app/somi-gdpr-breach-compliance/id1526458829"
                             target="_blank"
                         >
-                            <!-- <img
-                                src="/template/images/apple-store.webp"
+                            <NuxtImg
+                                src="/images/apple-store.webp"
                                 class="max-w-full rounded-md"
                                 alt="app-store"
                                 loading="lazy"
                                 width="131"
                                 height="43"
-                            /> -->
+                            />
                         </a>
 
                         <a href="https://play.google.com/store/apps/details?id=tech.dotswan.somi" target="_blank">
-                            <!-- <img
-                                src="/template/images/google-play.webp"
+                            <NuxtImg
+                                src="/images/google-play.webp"
                                 class="max-w-full rounded-md"
                                 alt="google-play"
                                 loading="lazy"
                                 width="147"
                                 height="43"
-                            /> -->
+                            />
                         </a>
                     </div>
                 </div>
@@ -515,7 +515,7 @@
                                 <!-- {{$post->title}} -->
                             </div>
                             <span class="flex items-center gap-4 text-xs">
-                                <!-- <img src="/template/icons/calendar.svg" width="24" height="24" alt="calender" /> -->
+                                <NuxtImg src="/icons/calendar.svg" width="24" height="24" alt="calender" />
                                 <!-- {{$post->published_at}} -->
                             </span>
                             <p class="text-sm md:text-base line-clamp-4">
@@ -526,39 +526,39 @@
                     </div>
 
                     <div class="flex items-center flex-wrap gap-5 justify-around || lg:justify-between">
-                        <!-- <img
+                        <NuxtImg
                             class="object-contain h-5 || lg:h-auto"
-                            src="/template/icons/ad-logo.png"
+                            src="/icons/ad-logo.png"
                             alt="ad logo"
                             width="21"
                             height="20"
                             loading="lazy"
                         />
-                        <img
+                        <NuxtImg
                             class="object-contain h-5 || lg:h-auto"
-                            src="/template/icons/de-volkskrant.png"
+                            src="/icons/de-volkskrant.png"
                             alt="de-volkskrant logo"
                             width="151"
                             height="20"
                             loading="lazy"
                         />
 
-                        <img
+                        <NuxtImg
                             class="object-contain h-5 || lg:h-auto"
-                            src="/template/icons/rtl.png"
+                            src="/icons/rtl.png"
                             alt="rtl logo"
                             width="126"
                             height="20"
                             loading="lazy"
                         />
-                        <img
+                        <NuxtImg
                             class="object-contain h-5 || lg:h-auto"
-                            src="/template/icons/telegraaf.png"
+                            src="/icons/telegraaf.png"
                             alt="telegraaf logo"
                             width="92"
                             height="20"
                             loading="lazy"
-                        /> -->
+                        />
                     </div>
                     <a class="btn btn-secondary ml-auto" href="/news">View all</a>
                 </div>
@@ -576,15 +576,15 @@
                     </p>
                 </div>
                 <div class="payout-section">
-                    <!-- <img
-                        src="/template/images/footer-gradiane.webp"
+                    <NuxtImg
+                        src="/images/footer-gradiane.webp"
                         alt="bg"
                         loading="lazy"
                         aria-hidden="true"
                         class="absolute inset-0 w-full h-full object-cover rounded-4xl z-0"
                         width="1536"
                         height="946"
-                    /> -->
+                    />
                     <div
                         class="absolute z-20 top-5 -right-3 shadow-badge px-4 pb-px bg-gradient-to-r from-secondary to-secondary-dark || lg:top-20 lg:-right-5 lg:px-6 lg:py-2"
                     >
@@ -594,12 +594,12 @@
                             certificates sold!
                         </span>
                     </div>
-                    <!-- <img
+                    <NuxtImg
                         class="absolute left-0 top-0 z-0"
-                        src="/template/images/dots-primary.png"
+                        src="/images/dots-primary.png"
                         loading="lazy"
                         alt="dots"
-                    /> -->
+                    />
 
                     <div class="static z-20 flex flex-col gap-2.5 items-center || lg:gap-5">
                         <h2>Payout</h2>
@@ -643,18 +643,18 @@
                             class="btn btn-primary"
                         >
                             Download
-                            <!-- <img
-                                src="/template/icons/download.svg"
+                            <NuxtImg
+                                src="/icons/download.svg"
                                 width="24"
                                 height="24"
                                 alt="download icon"
                                 loading="lazy"
-                            /> -->
+                            />
                         </a>
                     </div>
                 </div>
                 <div class="relative z-20 flex flex-col items-center gap-14 || md:items-end md:w-1/2">
-                    <!-- <img
+                    <NuxtImg
                         src="https://somi.nl/storage/55394/Brochure-EN.webp"
                         class="w-full shadow-card3 rounded || sm:w-80 sm:h-[26rem]"
                         alt="brochure"
@@ -662,26 +662,26 @@
                         height="842"
                         loading="lazy"
                     />
-                    <img
+                    <NuxtImg
                         class="absolute z-0 -top-16 right-[4%] || md:-right-20"
-                        src="/template/images/dots-who-gray.png"
+                        src="/images/dots-who-gray.png"
                         alt="dots"
                         loading="lazy"
-                    /> -->
+                    />
                     <a
                         href="https://somi.nl/storage/49878/NL---Garantie-Procescertificaten-Serie-2024---SOMI-compressed.pdf"
                         target="_blank"
                         class="btn btn-primary || md:hidden"
                     >
                         Download
-                        <!-- <img
+                        <NuxtImg
                             class="w-4 h-4"
-                            src="/template/icons/download.svg"
+                            src="/icons/download.svg"
                             width="24"
                             height="24"
                             alt="download icon"
                             loading="lazy"
-                        /> -->
+                        />
                     </a>
                 </div>
             </div>
