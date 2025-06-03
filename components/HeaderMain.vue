@@ -16,10 +16,18 @@
                     <ul class="hidden gap-6 xl:gap-11 items-center font-semibold text-lg || lg:flex">
                         <li>
                             <NuxtLink
-                                :to="localPath('/documents')"
+                                :to="localPath('/team')"
                                 class="hover:text-blue-900 hover:underline transition-all duration-300"
                             >
-                                Documents
+                                Team
+                            </NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink
+                                :to="localPath('/all-cases')"
+                                class="hover:text-blue-900 hover:underline transition-all duration-300"
+                            >
+                                Cases
                             </NuxtLink>
                         </li>
                         <li>
@@ -29,6 +37,64 @@
                             >
                                 News
                             </NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink
+                                :to="localPath('/investment')"
+                                class="hover:text-blue-900 hover:underline transition-all duration-300"
+                            >
+                                Investment
+                            </NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink
+                                :to="localPath('/somi-app')"
+                                class="hover:text-blue-900 hover:underline transition-all duration-300"
+                            >
+                                Somi App
+                            </NuxtLink>
+                        </li>
+
+                        <li class="relative cursor-pointer group">
+                            <div class="flex gap-2 items-center">
+                                <span
+                                    class="group-hover:text-primary group-hover:underline transition-all duration-300"
+                                >
+                                    More
+                                </span>
+                                <div
+                                    class="border-black w-2.5 h-2.5 border-b-2 border-r-2 rotate-45 mb-1.5 group-hover:border-primary"
+                                ></div>
+                            </div>
+                            <ul
+                                class="absolute -left-5 -top-3.5 z-50 w-56 py-3.5 px-5 hidden flex-col gap-3.5 bg-white shadow-lg rounded-xl group-hover:flex"
+                            >
+                                <div class="flex gap-2 items-center cursor-pointer mb-1.5">
+                                    <span
+                                        class="group-hover:text-primary group-hover:underline transition-all duration-300"
+                                    >
+                                        More
+                                    </span>
+                                    <div
+                                        class="border-black w-2.5 h-2.5 border-b-2 border-r-2 rotate-45 mb-1.5 group-hover:border-primary"
+                                    ></div>
+                                </div>
+                                <li class="sub-menu-link">
+                                    <NuxtLink :to="localPath('/documents')" class="menu-item">Documents</NuxtLink>
+                                </li>
+                                <li class="sub-menu-link">
+                                    <NuxtLink :to="localPath('/mass-claim')" class="menu-item">Submit claim</NuxtLink>
+                                </li>
+                                <li class="sub-menu-link">
+                                    <NuxtLink :to="localPath('/faq')" class="menu-item">FAQ</NuxtLink>
+                                </li>
+                                <li class="sub-menu-link">
+                                    <NuxtLink :to="localPath('/referral')" class="menu-item">Referral campaign</NuxtLink>
+                                </li>
+                                <li class="sub-menu-link">
+                                    <NuxtLink :to="localPath('/contact')" class="menu-item">Contact</NuxtLink>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
 

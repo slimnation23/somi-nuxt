@@ -130,10 +130,10 @@
                 <past-case-slider></past-case-slider>
 
                 <div class="hidden justify-end md:flex">
-                    <a class="btn btn-secondary" href="/all-cases">Discover more</a>
+                    <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">Discover more</NuxtLink>
                 </div>
                 <div class="flex justify-end || md:hidden">
-                    <a class="btn btn-secondary w-auto" href="/all-cases">View all</a>
+                    <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">View all</NuxtLink>
                 </div>
             </div>
         </section>
@@ -560,7 +560,7 @@
                             loading="lazy"
                         />
                     </div>
-                    <a class="btn btn-secondary ml-auto" href="/news">View all</a>
+                    <NuxtLink :to="localPath('/news')" class="btn btn-secondary ml-auto">View all</NuxtLink>
                 </div>
             </div>
         </section>
@@ -614,8 +614,8 @@
                         </p>
                     </div>
                     <div class="flex z-20 justify-center flex-wrap gap-5 || lg:flex-nowrap lg:gap-10">
-                        <a href="/investment" class="btn btn-white-secondary-button">Discover more</a>
-                        <a href="/investment-application" class="btn btn-white-primary-button">Invest now</a>
+                        <NuxtLink :to="localPath('/investment')" class="btn btn-secondary">Discover more</NuxtLink>
+                        <NuxtLink :to="localPath('/investment-application')" class="btn btn-secondary">Invest more</NuxtLink>
                     </div>
                 </div>
             </div>
