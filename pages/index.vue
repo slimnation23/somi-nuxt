@@ -16,13 +16,13 @@
                             online services. Learn how we work below.
                         </p>
                         <div class="hidden || lg:inline-flex">
-                            <a class="btn btn-secondary" href="/all-cases">Discover more</a>
+                            <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">Discover more</NuxtLink>
                         </div>
                     </div>
                     <div class="w-full col-span-1 mx-auto min-h-[656px] || sm:w-1/2 lg:w-full">
                         <hero-slider ref="heroSlide" class="pb-16 || lg:pb-0"></hero-slider>
                         <div class="flex flex-col justify-center items-center gap-3 || lg:hidden">
-                            <a class="btn btn-secondary" href="/all-cases">Discover more</a>
+                            <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">Discover more</NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     </p>
 
                     <div class="flex justify-center items-center">
-                        <a class="btn btn-secondary" href="/team">Meet the team</a>
+                        <NuxtLink :to="localPath('/team')" class="btn btn-secondary">Meet the team</NuxtLink>
                     </div>
                 </div>
             </div>
@@ -57,14 +57,14 @@
                         <div
                             class="w-40 rounded-3xl shadow-hard inline-flex relative -mt-32 mx-auto || md:mt-0 lg:w-60"
                         >
-                            <!-- <img
+                            <NuxtImg
+                                src="/images/eu-recognition.webp"
                                 class="w-40 rounded-3xl || lg:w-64 lg:h-64"
-                                src="/template/images/eu-recognition.webp"
                                 alt="somi"
                                 loading="lazy"
                                 width="248"
                                 height="252"
-                            /> -->
+                            />
                         </div>
                         <div class="inline-flex flex-col flex-1 gap-9 || lg:gap-6">
                             <h2>
@@ -86,26 +86,26 @@
                             class="btn btn-secondary"
                         >
                             <span>EU Commission</span>
-                            <!-- <img
+                            <NuxtImg
+                                src="/icons/arrow-right.svg"
                                 class="w-7 h-auto"
-                                src="/template/icons/arrow-right.svg"
                                 width="35"
                                 height="23"
                                 alt="right wards"
-                            /> -->
+                            />
                         </a>
                         <a
                             href="https://www.rijksoverheid.nl/documenten/publicaties/2023/12/08/lijst-met-aangewezen-organisaties-voor-collectieve-acties-in-de-europese-unie"
                             class="btn btn-secondary"
                         >
                             <span>Rijksoverheid.nl</span>
-                            <!-- <img
+                            <NuxtImg
+                                src="/icons/arrow-right.svg"
                                 class="w-7 h-auto"
-                                src="/template/icons/arrow-right.svg"
                                 width="35"
                                 height="23"
                                 alt="right wards"
-                            /> -->
+                            />
                         </a>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                     <h2 class="mb-20 || lg:mb-36">Active claims</h2>
 
                     <!-- Slider -->
-                    <!-- <claim-slider></claim-slider> -->
+                    <claim-slider></claim-slider>
                 </div>
             </div>
         </section>
@@ -690,24 +690,13 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from "~/src/stores/mainStore";
 import { useLocalePath } from "#i18n";
-import HeroSlider from '~/components/HeroSlider.vue'
+import HeroSlider from "~/components/HeroSlider.vue";
 
-export default {
-    name: "DefaultLayout",
+const mainStore = useMainStore();
+const localPath = useLocalePath();
 
-    setup() {
-        const mainStore = useMainStore();
-        const localPath = useLocalePath();
-
-        mainStore.parseLang();
-
-        return {
-            mainStore,
-            localPath,
-        };
-    },
-};
+mainStore.parseLang();
 </script>

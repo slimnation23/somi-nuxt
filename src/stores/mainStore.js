@@ -53,8 +53,13 @@ export const useMainStore = defineStore("main", {
         getModalState: (state) => state.modal,
         getNewsSort: (state) => state.newsSort,
         getActiveClaimsSlider: (state) => {
-            return state.activeClaimsSlider.filter((item) => item.language === state.lang);
+            return state.activeClaimsSlider.filter((item) => {
+                const lang = state.lang;
+                const category = item[`category-${lang}`];
+                return item.language === lang && Array.isArray(category) && category.includes("running");
+            });
         },
+
         getActiveClaims: (state) => {
             const langFiltered = state.cases.filter((c) => c.language === state.lang);
             return langFiltered.filter((c) => !!c.status);
