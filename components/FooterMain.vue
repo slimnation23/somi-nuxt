@@ -1,15 +1,16 @@
 <template>
-    <footer class="relative z-20 bg-cover text-gray-100 py-16 lg:py-24">
-        <picture>
-            <source srcset="/images/footer-gradiane.webp" media="(min-width: 768px)" type="image/webp" />
-            <img
-                src="/images/footer-gradiane-mobile.webp"
-                alt="bg"
-                loading="lazy"
-                aria-hidden="true"
-                class="absolute inset-0 w-full h-full object-cover z-[-1]"
-            />
-        </picture>
+    <footer class="relative z-20 bg-cover text-gray py-16 lg:py-24">
+        <NuxtImg
+            src="/images/footer-gradiane-mobile.webp"
+            alt="bg"
+            loading="lazy"
+            aria-hidden="true"
+            class="absolute inset-0 w-full h-full object-cover z-[-1]"
+            srcset="
+                    /images/footer-gradiane-mobile.webp 767w,
+                    /images/footer-gradiane.webp 768w"
+            sizes="(min-width: 768px) 100vw, 100vw"
+        />
 
         <div class="w-full px-5 md:px-9 xl:px-28 2xl:mx-auto 2xl:container flex flex-col gap-14 || lg:gap-36">
             <div class="grid gap-14 || sm:grid-cols-2 xl:grid-cols-10 xl:gap-28">
@@ -18,25 +19,31 @@
                     <div class="title-1 font-semibold">Quick links</div>
                     <ul class="flex flex-col gap-7 title-2 || lg:gap-8 lg:underline">
                         <li>
-                            <a href="/faq">FAQ</a>
+                            <NuxtLink :to="localPath('/faq')">FAQ</NuxtLink>
                         </li>
                         <li>
-                            <a href="/terms-conditions">General Terms & Conditions</a>
+                            <NuxtLink :to="localPath('/terms-conditions')">General Terms & Conditions</NuxtLink>
                         </li>
                         <li>
-                            <a href="/somi-app-terms-conditions">SOMI App Terms & Conditions</a>
+                            <NuxtLink :to="localPath('/somi-app-terms-conditions')">
+                                SOMI App Terms & Conditions
+                            </NuxtLink>
                         </li>
                         <li>
-                            <a href="/privacy-statement">Privacy Statement</a>
+                            <NuxtLink :to="localPath('/privacy-statement')">Privacy Statement</NuxtLink>
                         </li>
                         <li>
-                            <a href="/cookies-statement">Cookie Statement</a>
+                            <NuxtLink :to="localPath('/cookies-statement')">Cookie Statement</NuxtLink>
                         </li>
                         <li>
-                            <a href="/responsible-disclosure-policy">Responsible Disclosure Policy</a>
+                            <NuxtLink :to="localPath('/responsible-disclosure-policy')">
+                                Responsible Disclosure Policy
+                            </NuxtLink>
                         </li>
                         <li>
-                            <a href="/referral-terms-and-conditions">Referral Terms & Conditions</a>
+                            <NuxtLink :to="localPath('/referral-terms-and-conditions')">
+                                Referral Terms & Conditions
+                            </NuxtLink>
                         </li>
                     </ul>
                 </div>
@@ -47,26 +54,18 @@
                         <div class="flex flex-col gap-8">
                             <div class="flex gap-5 flex-wrap">
                                 <a href="mailto: welcome@somi.nl" class="flex items-center gap-1.5">
-                                    <!-- <img src="/template/icons/mail.svg" class="w-4 h-4 || lg:w-6 lg:h-6" alt="mail" /> -->
+                                    <NuxtImg src="/icons/mail.svg" class="w-4 h-4 || lg:w-6 lg:h-6" alt="mail" />
                                     <p>welcome@somi.nl</p>
                                 </a>
                                 <a href="tel:+31208085182" class="flex items-center gap-1.5">
-                                    <!-- <img
-                                        src="/template/icons/phone.svg"
-                                        class="w-4 h-4 || lg:w-6 lg:h-6"
-                                        alt="phone icon"
-                                    /> -->
+                                    <NuxtImg src="/icons/phone.svg" class="w-4 h-4 || lg:w-6 lg:h-6" alt="mail" />
                                     <p>+31 20 808 5182</p>
                                 </a>
                             </div>
                             <div class="flex flex-col gap-2.5 flex-wrap || lg:gap-8">
                                 <div class="flex gap-5">
                                     <p class="flex items-center gap-1.5">
-                                        <!-- <img
-                                            class="w-4 h-4 || lg:hidden lg:w-6 lg:h-6"
-                                            src="/template/icons/bank.png"
-                                            alt="bank icon"
-                                        /> -->
+                                        <NuxtImg src="/icons/bank.png" class="w-4 h-4 || lg:w-6 lg:h-6" alt="mail" />
                                         <span>
                                             <b>KvK:</b>
                                             66169208
@@ -105,39 +104,39 @@
                                     href="https://www.linkedin.com/company/stichting-onderzoek-marktinformatie/"
                                     target="_blank"
                                 >
-                                    <!-- <img
-                                        src="/template/icons/linkedin-brands.svg"
+                                    <NuxtImg
+                                        src="/icons/linkedin-brands.svg"
                                         class="w-12 h-12 rounded-xl"
                                         alt="linkedin icon"
-                                    /> -->
+                                    />
                                 </a>
                                 <a href="https://www.facebook.com/stichtingonderzoekmarktinformatie/" target="_blank">
-                                    <!-- <img
-                                        src="/template/icons/square-facebook-brands.svg"
+                                    <NuxtImg
+                                        src="/icons/square-facebook-brands.svg"
                                         class="w-12 h-12 rounded-xl"
-                                        alt="facebook icon"
-                                    /> -->
+                                        alt="linkedin icon"
+                                    />
                                 </a>
                                 <a href="https://www.youtube.com/@stichtingonderzoekmarktinf3205" target="_blank">
-                                    <!-- <img
-                                        src="/template/icons/square-youtube-brands.svg"
+                                    <NuxtImg
+                                        src="/icons/square-youtube-brands.svg"
                                         class="w-12 h-12 rounded-xl"
                                         alt="youtube icon"
-                                    /> -->
+                                    />
                                 </a>
                                 <a href="https://www.instagram.com/somi_foundation/" target="_blank">
-                                    <!-- <img
-                                        src="/template/icons/square-instagram-brands.svg"
+                                    <NuxtImg
+                                        src="/icons/square-instagram-brands.svg"
                                         class="w-12 h-12 rounded-xl"
                                         alt="instagram"
-                                    /> -->
+                                    />
                                 </a>
                                 <a href="https://bsky.app/profile/somifoundation.bsky.social" target="_blank">
-                                    <!-- <img
-                                        src="/template/icons/square-bluesky-brands.svg"
+                                    <NuxtImg
+                                        src="/icons/square-bluesky-brands.svg"
                                         class="w-12 h-12 rounded-xl"
                                         alt="bluesky"
-                                    /> -->
+                                    />
                                 </a>
                             </div>
                         </div>
@@ -145,12 +144,15 @@
                             <p class="title-1 font-semibold">Newsletter</p>
                             <div class="flex flex-col gap-5">
                                 <p>Subscribe to our newsletter</p>
-                                <!-- <newsletter></newsletter> -->
+                                <newsletter></newsletter>
                             </div>
                             <div class="text-center || sm:text-left">
-                                <a href="/contact" class="btn btn-white-secondary-button !w-full || lg:!w-fit">
+                                <NuxtLink
+                                    :to="localPath('/contact')"
+                                    class="btn btn-white-secondary-button !w-full || lg:!w-fit"
+                                >
                                     Contact us now
-                                </a>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>
@@ -160,3 +162,7 @@
         </div>
     </footer>
 </template>
+
+<script setup>
+const localPath = useLocalePath();
+</script>

@@ -2,8 +2,8 @@
     <div class="sm:pl-3">
         <div class="hidden tag px-5 py-1 bg-gradient-to-r from-secondary to-secondary-dark || lg:inline-flex">
             <span class="font-redHat">
-                {{ Translate("status") }}:
-                <strong>{{ Translate("active") }}</strong>
+                status:
+                <strong>active</strong>
             </span>
         </div>
         <a :href="cardData.url" target="_blank" rel="noopener noreferrer">
@@ -21,7 +21,7 @@
             <p class="title-2 pb-10">{{ truncatedDescription }}</p>
             <div class="flex justify-center">
                 <a class="btn btn-primary" :href="cardData.url">
-                    {{ Translate("Join now") }}
+                    Join now
                 </a>
             </div>
         </div>

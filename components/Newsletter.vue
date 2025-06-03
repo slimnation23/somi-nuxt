@@ -8,7 +8,7 @@
                 name="email"
                 autocomplete="email"
                 v-model="email"
-                :placeholder="Translate('Type your email to subscribe')"
+                placeholder="Type your email to subscribe"
             />
             <button
                 type="button"
@@ -40,14 +40,14 @@
                 class="transition-all duration-300 ease-in-out message rounded-2xl text-[#00FF94] text-sm font-bold"
                 :class="submitted"
             >
-                {{ Translate("Thank you for subscribing!") }}
+                Thank you for subscribing!
             </p>
             <p
                 v-show="submitted === 'error'"
                 class="transition-all duration-300 ease-in-out message rounded-2xl text-red text-sm font-bold"
                 :class="submitted"
             >
-                {{ Translate("Oops, something went wrong!") }}
+                Oops, something went wrong!
             </p>
         </div>
     </form>
