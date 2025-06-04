@@ -118,7 +118,7 @@ export default {
     data() {
         return {
             modules: [EffectCards],
-            windowWidth: window.innerWidth,
+            windowWidth: 0,
             swiper: null,
         };
     },
@@ -131,6 +131,7 @@ export default {
     mounted() {
         const mainStore = useMainStore();
         mainStore.fetchAllCases();
+        this.windowWidth = window.innerWidth;
         window.addEventListener("resize", this.handleResize);
     },
     beforeUnmount() {

@@ -5,24 +5,29 @@
                 <div class="grid grid-cols-1 gap-16 || lg:grid-cols-2 lg:gap-40">
                     <div class="flex flex-col gap-5 col-span-1 || lg:min-h-28 lg:gap-20 lg:pt-6">
                         <h1>
-                            SOMI
+                            {{ $t("title_part1") }}
                             <br />
-                            All your Data
+                            {{ $t("title_part2") }}
                             <br />
-                            <span class="text-primary">All yours.</span>
+                            <span class="text-primary">
+                                {{ $t("title_part3") }}
+                            </span>
                         </h1>
                         <p class="title-1">
-                            SOMI is committed to protecting the fundamental rights of consumers and minors who use
-                            online services. Learn how we work below.
+                            {{ $t("hero.description") }}
                         </p>
                         <div class="hidden || lg:inline-flex">
-                            <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">Discover more</NuxtLink>
+                            <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">
+                                {{ $t("Discover more") }}
+                            </NuxtLink>
                         </div>
                     </div>
                     <div class="w-full col-span-1 mx-auto min-h-[656px] || sm:w-1/2 lg:w-full">
                         <hero-slider ref="heroSlide" class="pb-16 || lg:pb-0"></hero-slider>
                         <div class="flex flex-col justify-center items-center gap-3 || lg:hidden">
-                            <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">Discover more</NuxtLink>
+                            <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">
+                                {{ $t("Discover more") }}
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -30,18 +35,10 @@
             <div id="who-we-are" class="relative min-h-[800px] lg:min-h-[900px]">
                 <div class="wrapper pb-[30rem] || md:pb-96">
                     <h2 class="mb-9 || lg:mb-11">
-                        <span class="text-primary">Who</span>
-                        are we?
+                        <span class="text-primary">{{ $t("who_part1") }}</span>
+                        {{ $t("who_part2") }}
                     </h2>
-                    <p class="title-1 mb-16 || lg:mb-24">
-                        The Foundation for Market Information Research (SOMI) is a non-profit organization set up to
-                        <b>identify and influence</b>
-                        issues of social importance
-                        <br />
-                        <br />
-                        SOMI investigates abuses, informs the public, and helps disadvantaged people. SOMI does this,
-                        among other things, by conducting collective proceedings and claiming compensation.
-                    </p>
+                    <p class="title-1 mb-16 || lg:mb-24" v-html="$t('somiIntro')"></p>
 
                     <div class="flex justify-center items-center">
                         <NuxtLink :to="localPath('/team')" class="btn btn-secondary">Meet the team</NuxtLink>
@@ -615,7 +612,9 @@
                     </div>
                     <div class="flex z-20 justify-center flex-wrap gap-5 || lg:flex-nowrap lg:gap-10">
                         <NuxtLink :to="localPath('/investment')" class="btn btn-secondary">Discover more</NuxtLink>
-                        <NuxtLink :to="localPath('/investment-application')" class="btn btn-secondary">Invest more</NuxtLink>
+                        <NuxtLink :to="localPath('/investment-application')" class="btn btn-secondary">
+                            Invest more
+                        </NuxtLink>
                     </div>
                 </div>
             </div>

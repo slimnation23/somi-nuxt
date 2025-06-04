@@ -18,6 +18,8 @@ export default defineNuxtConfig({
             { code: "en", name: "English", file: "en.json" },
         ],
         defaultLocale: "nl",
+        warnHtmlMessage: false,
+        escapeParameterHtml: false,
     },
     vite: {
         resolve: {
