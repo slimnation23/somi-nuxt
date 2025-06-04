@@ -1,13 +1,38 @@
 {
-    "title_part1": "SOMI",
-    "title_part2": "All your Data",
-    "title_part3": "All yours.",
-    "hero.description": "SOMI is committed to protecting the fundamental rights of consumers and minors who use online services. Learn how we work below.",
-    "Discover more": "Discover more",
-    "status": "status",
-    "active": "active",
-    "Join now": "Join now",
-    "who_part1": "Who",
-    "who_part2": "we are",
-    "somiIntro": "The Foundation for Market Information Research (SOMI) is a non-profit organization set up to <b>identify and influence</b> issues of social importance.<br><br>SOMI investigates abuses, informs the public, and helps disadvantaged people. SOMI does this, among other things, by conducting collective proceedings and claiming compensation."
+    "header": {
+        "team": "Team",
+        "cases": "Cases",
+        "news": "News",
+        "investment": "Investment",
+        "somi-app": "Somi app",
+        "more": "More",
+        "documents": "Documents",
+        "submit-claim": "Submit claim",
+        "faq": "FAQ",
+        "referral-campaign": "Referral campaign",
+        "contact": "Contact"
+    },
+    "homepage": {
+        "title_part1": "SOMI",
+        "title_part2": "All your Data",
+        "title_part3": "All yours.",
+        "hero-description": "SOMI is committed to protecting the fundamental rights of consumers and minors who use online services. Learn how we work below.",
+        "discover-more": "Discover more",
+        "status": "status",
+        "active": "active",
+        "join-now": "Join now",
+        "who_part1": "Who",
+        "who_part2": "we are?",
+        "who_part3": "The Foundation for Market Information Research (SOMI) is a non-profit organization set up to",
+        "who_part4": "identify and influence",
+        "who_part5": "issues of social importance",
+        "who_part6": "SOMI investigates abuses, informs the public, and helps disadvantaged people. SOMI does this, among other things, by conducting collective proceedings and claiming compensation.",
+        "meet-the-team": "Meet the team"
+    },
+    "news": {
+        "title": "News",
+        "description_1": "On this page you can read all the latest news articles and our blogposts.",
+        "description_2": "Filter by the category for the most relevant articles.",
+        "filter": "Filter by"
+    }
 }

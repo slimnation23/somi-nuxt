@@ -25,7 +25,7 @@
                     src="/icons/right-arrow.svg"
                     width="18"
                     height="29"
-                    class="max-w-5 max-h-5 || lg:max-h-fit lg:max-w-fit"
+                    class="max-w-5 max-h-5 || lg:max-h-10 lg:max-w-10"
                     alt="right-arrow"
                 />
             </button>

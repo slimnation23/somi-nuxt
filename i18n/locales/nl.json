@@ -1,5 +1,38 @@
 {
-    "title": "Homepage NL",
-    "about_title": "About NL",
-    "contact_title": "Contact NL"
+    "header": {
+        "team": "Team",
+        "cases": "Dossiers",
+        "news": "Nieuws",
+        "investment": "Investeren",
+        "somi-app": "Somi app",
+        "more": "More",
+        "documents": "Documenten",
+        "submit-claim": "Claim indienen",
+        "faq": "FAQ",
+        "referral-campaign": "Referral campaign",
+        "contact": "Contact"
+    },
+    "homepage": {
+        "title_part1": "SOMI",
+        "title_part2": "Al jouw data",
+        "title_part3": "Helemaal van jou",
+        "hero-description": "SOMI zet zich in voor de bescherming van de fundamentele rechten van consumenten en minderjarigen die onlinediensten gebruiken. Lees hieronder hoe wij werken.",
+        "discover-more": "Ontdek meer",
+        "status": "status",
+        "active": "actief",
+        "join-now": "Doe mee",
+        "who_part1": "Wie",
+        "who_part2": "zijn we?",
+        "who_part3": "De Stichting Onderzoek Marktinformatie (SOMI) is een non-profit organisatie opgericht voor het",
+        "who_part4": "signaleren en beïnvloeden",
+        "who_part5": "van belangrijke vraagstukken van maatschappelijk belang.",
+        "who_part6": "SOMI onderzoekt misstanden, informeert het publiek en helpt slachtoffers. Dat doet SOMI onder andere door het voeren van collectieve procedures en het vorderen van schadevergoeding.",
+        "meet-the-team": "Ontmoet ons team"
+    },
+    "news": {
+        "title": "Nieuws",
+        "description_1": "Op deze pagina kunt u alle nieuwste nieuwsartikelen en onze blogposts lezen.",
+        "description_2": "Filter op categorie voor de meest relevante artikelen.",
+        "filter": "Sorteer op"
+    }
 }

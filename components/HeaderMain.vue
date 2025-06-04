@@ -19,7 +19,7 @@
                                 :to="localPath('/team')"
                                 class="hover:text-blue-900 hover:underline transition-all duration-300"
                             >
-                                Team
+                                {{ $t("header.team") }}
                             </NuxtLink>
                         </li>
                         <li>
@@ -27,7 +27,7 @@
                                 :to="localPath('/all-cases')"
                                 class="hover:text-blue-900 hover:underline transition-all duration-300"
                             >
-                                Cases
+                                {{ $t("header.cases") }}
                             </NuxtLink>
                         </li>
                         <li>
@@ -35,7 +35,7 @@
                                 :to="localPath('/news')"
                                 class="hover:text-blue-900 hover:underline transition-all duration-300"
                             >
-                                News
+                                {{ $t("header.news") }}
                             </NuxtLink>
                         </li>
                         <li>
@@ -43,7 +43,7 @@
                                 :to="localPath('/investment')"
                                 class="hover:text-blue-900 hover:underline transition-all duration-300"
                             >
-                                Investment
+                                {{ $t("header.investment") }}
                             </NuxtLink>
                         </li>
                         <li>
@@ -51,7 +51,7 @@
                                 :to="localPath('/somi-app')"
                                 class="hover:text-blue-900 hover:underline transition-all duration-300"
                             >
-                                Somi App
+                                {{ $t("header.somi-app") }}
                             </NuxtLink>
                         </li>
 
@@ -60,7 +60,7 @@
                                 <span
                                     class="group-hover:text-primary group-hover:underline transition-all duration-300"
                                 >
-                                    More
+                                    {{ $t("header.more") }}
                                 </span>
                                 <div
                                     class="border-black w-2.5 h-2.5 border-b-2 border-r-2 rotate-45 mb-1.5 group-hover:border-primary"
@@ -73,26 +73,28 @@
                                     <span
                                         class="group-hover:text-primary group-hover:underline transition-all duration-300"
                                     >
-                                        More
+                                        {{ $t("header.more") }}
                                     </span>
                                     <div
                                         class="border-black w-2.5 h-2.5 border-b-2 border-r-2 rotate-45 mb-1.5 group-hover:border-primary"
                                     ></div>
                                 </div>
                                 <li class="sub-menu-link">
-                                    <NuxtLink :to="localPath('/documents')" class="menu-item">Documents</NuxtLink>
+                                    <NuxtLink :to="localPath('/documents')" class="menu-item">{{ $t("header.documents") }}</NuxtLink>
                                 </li>
                                 <li class="sub-menu-link">
-                                    <NuxtLink :to="localPath('/mass-claim')" class="menu-item">Submit claim</NuxtLink>
+                                    <NuxtLink :to="localPath('/mass-claim')" class="menu-item">{{ $t("header.submit-claim") }}</NuxtLink>
                                 </li>
                                 <li class="sub-menu-link">
-                                    <NuxtLink :to="localPath('/faq')" class="menu-item">FAQ</NuxtLink>
+                                    <NuxtLink :to="localPath('/faq')" class="menu-item">{{ $t("header.faq") }}</NuxtLink>
                                 </li>
                                 <li class="sub-menu-link">
-                                    <NuxtLink :to="localPath('/referral')" class="menu-item">Referral campaign</NuxtLink>
+                                    <NuxtLink :to="localPath('/referral')" class="menu-item">
+                                        {{ $t("header.referral-campaign") }}
+                                    </NuxtLink>
                                 </li>
                                 <li class="sub-menu-link">
-                                    <NuxtLink :to="localPath('/contact')" class="menu-item">Contact</NuxtLink>
+                                    <NuxtLink :to="localPath('/contact')" class="menu-item">{{ $t("header.contact") }}</NuxtLink>
                                 </li>
                             </ul>
                         </li>

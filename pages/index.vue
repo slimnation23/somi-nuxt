@@ -5,20 +5,20 @@
                 <div class="grid grid-cols-1 gap-16 || lg:grid-cols-2 lg:gap-40">
                     <div class="flex flex-col gap-5 col-span-1 || lg:min-h-28 lg:gap-20 lg:pt-6">
                         <h1>
-                            {{ $t("title_part1") }}
+                            {{ $t("homepage.title_part1") }}
                             <br />
-                            {{ $t("title_part2") }}
+                            {{ $t("homepage.title_part2") }}
                             <br />
                             <span class="text-primary">
-                                {{ $t("title_part3") }}
+                                {{ $t("homepage.title_part3") }}
                             </span>
                         </h1>
                         <p class="title-1">
-                            {{ $t("hero.description") }}
+                            {{ $t("homepage.hero-description") }}
                         </p>
                         <div class="hidden || lg:inline-flex">
                             <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">
-                                {{ $t("Discover more") }}
+                                {{ $t("homepage.discover-more") }}
                             </NuxtLink>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                         <hero-slider ref="heroSlide" class="pb-16 || lg:pb-0"></hero-slider>
                         <div class="flex flex-col justify-center items-center gap-3 || lg:hidden">
                             <NuxtLink :to="localPath('/all-cases')" class="btn btn-secondary">
-                                {{ $t("Discover more") }}
+                                {{ $t("homepage.discover-more") }}
                             </NuxtLink>
                         </div>
                     </div>
@@ -35,13 +35,20 @@
             <div id="who-we-are" class="relative min-h-[800px] lg:min-h-[900px]">
                 <div class="wrapper pb-[30rem] || md:pb-96">
                     <h2 class="mb-9 || lg:mb-11">
-                        <span class="text-primary">{{ $t("who_part1") }}</span>
-                        {{ $t("who_part2") }}
+                        <span class="text-primary">{{ $t("homepage.who_part1") }}</span>
+                        {{ $t("homepage.who_part2") }}
                     </h2>
-                    <p class="title-1 mb-16 || lg:mb-24" v-html="$t('somiIntro')"></p>
+                    <p class="title-1 mb-16 || lg:mb-24">
+                        {{ $t("homepage.who_part3") }}
+                        <b>{{ $t("homepage.who_part4") }}</b>
+                        {{ $t("homepage.who_part5") }}
+                        <br />
+                        <br />
+                        {{ $t("homepage.who_part6") }}
+                    </p>
 
                     <div class="flex justify-center items-center">
-                        <NuxtLink :to="localPath('/team')" class="btn btn-secondary">Meet the team</NuxtLink>
+                        <NuxtLink :to="localPath('/team')" class="btn btn-secondary">{{ $t("homepage.meet-the-team") }}</NuxtLink>
                     </div>
                 </div>
             </div>

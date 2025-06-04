@@ -6,12 +6,14 @@
                     <a href="/" class="h-4 w-4 || lg:h-6 lg:w-6 lg:-ml-8">
                         <NuxtImg src="/icons/left-arrow.png" alt="left-arrow" width="32" height="32" />
                     </a>
-                    <h2 class="text-primary">News</h2>
+                    <h2 class="text-primary">
+                        {{ $t("news.title") }}
+                    </h2>
                 </div>
                 <p class="title-1">
-                    On this page you can read all the latest news articles and our blogposts.
+                    {{ $t("news.description_1") }}
                     <br />
-                    Filter by the category for the most relevant articles.
+                    {{ $t("news.description_2") }}
                 </p>
             </div>
         </section>
@@ -22,7 +24,7 @@
                 <div class="flex flex-col justify-start gap-5 || lg:items-center lg:flex-row">
                     <div class="flex items-center gap-4">
                         <NuxtImg src="/icons/filter.svg" alt="left-arrow" width="32" height="32" />
-                        <p class="title-1 font-semibold">Filter by:</p>
+                        <p class="title-1 font-semibold">{{$t('news.filter')}}:</p>
                     </div>
                     <ul class="flex flex-wrap title-2 gap-4 || lg:gap-10" v-active-news-filter>
                         <!-- @foreach(categoryService()->all(language:'en',parentCategory: 'news-category') as $category) -->
