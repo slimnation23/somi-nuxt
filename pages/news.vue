@@ -26,7 +26,7 @@
                         <NuxtImg src="/icons/filter.svg" alt="left-arrow" width="32" height="32" />
                         <p class="title-1 font-semibold">{{$t('news.filter')}}:</p>
                     </div>
-                    <ul class="flex flex-wrap title-2 gap-4 || lg:gap-10" v-active-news-filter>
+                    <ul class="flex flex-wrap title-2 gap-4 || lg:gap-10">
                         <!-- @foreach(categoryService()->all(language:'en',parentCategory: 'news-category') as $category) -->
                         <li class="sort-item border-black filter-items">
                             <a href="/">
@@ -36,7 +36,6 @@
                         <!-- @endforeach -->
                         <li
                             id="clear"
-                            v-clear-active-filter
                             class="flex justify-center items-center rounded-full cursor-pointer filter-items hover:opacity-60 duration-500"
                         >
                             <span onclick="window.location.reload()">Clear</span>

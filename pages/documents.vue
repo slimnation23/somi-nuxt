@@ -86,5 +86,36 @@
 </template>
 
 <script setup>
-const localPath = useLocalePath();
+useHead({
+    title: "Privacy en Online Veiligheid | SOMI",
+    meta: [
+        { "http-equiv": "x-ua-compatible", content: "ie=edge" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { property: "og:type", content: "website" },
+        { property: "og:site_name", content: "Privacy en Online Veiligheid | SOMI" },
+        { property: "og:url", content: "https://somi.nl" },
+        { property: "og:title", content: "Privacy en Online Veiligheid | SOMI" },
+        {
+            name: "description",
+            content:
+                "SOMI is een non profit organisatie opgericht voor het signaleren en beinvloeden van vraagstukken van maatschappelijk belang.",
+        },
+        // { property: "og:image", content: "/template/fav/somi-app-preview.png" },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "600" },
+        { property: "og:image:type", content: "image/jpeg" },
+        { name: "apple-mobile-web-app-title", content: "Privacy en Online Veiligheid | SOMI" },
+        { name: "application-name", content: "Privacy en Online Veiligheid | SOMI" },
+        { name: "msapplication-TileColor", content: "#da532c" },
+        { name: "theme-color", content: "#ffffff" },
+    ],
+    link: [
+        // { rel: "apple-touch-icon", sizes: "180x180", href: "/template/fav/apple-touch-icon.png" },
+        // { rel: "icon", type: "image/png", sizes: "32x32", href: "/template/fav/favicon-32x32.png" },
+        // { rel: "icon", type: "image/png", sizes: "16x16", href: "/template/fav/favicon-16x16.png" },
+        // { rel: "manifest", href: "/template/fav/site.webmanifest" },
+        // { rel: "mask-icon", href: "/template/fav/safari-pinned-tab.svg", color: "#5bbad5" },
+        { rel: "icon", href: "/favicon.ico" },
+    ],
+});
 </script>
